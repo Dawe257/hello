@@ -23,3 +23,7 @@ dependencies {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
+
+tasks.bootJar {
+    destinationDirectory.set(File(project.buildDir.path, "bootJar"))
+}
